@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <link rel="icon" href="images/rec.png" />
+
+    <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="container max-w-[90%] mx-auto my-5">
+      <include src="partials/heading.html"></include>
+      <div class="my-10">
+        <include src="partials/main.html"></include>
+      </div>
+      <!-- <div class="my-10">
+        <include src="partials/gif.html"></include>
+      </div> -->
+    </div>
+
+    <script type="module" src="./app.js"></script>
   </body>
 </html>
