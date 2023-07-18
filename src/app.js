@@ -7,31 +7,12 @@ const totalOutputTabEl = document.getElementById('total-output-tab');
 // ### EVENTS
 
 calculateBtnEl.addEventListener('click', () => {
-  // totalOutputMathEl.innerHTML = calculate(
-  //   Number(veneerThickEl.value),
-  //   Number(rollThickEl.value)
-  // );
   totalOutputTabEl.innerHTML = calculate2(
     Number(veneerThickEl.value),
     Number(rollThickEl.value)
   );
   rollThickEl.value = '';
 });
-
-// ### CALCULATE
-
-// const calculate = (veneerThick, rollThick) => {
-//   const INSIDE_ROLL_RADIUS = 10.151;
-//   let total = 0;
-//   for (
-//     i = INSIDE_ROLL_RADIUS;
-//     i <= INSIDE_ROLL_RADIUS + rollThick;
-//     i += veneerThick / 10
-//   ) {
-//     total = total + 2 * Math.PI * i;
-//   }
-//   return `${Math.round(total / 100)} mb`;
-// };
 
 const calculate2 = (veneerThick, rollThick) => {
   let total = 0;
