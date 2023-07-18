@@ -23,6 +23,7 @@ calculateBtnEl.addEventListener('click', () => {
 const calculate = (veneerThick, rollThick) => {
   const INSIDE_ROLL_RADIUS = 10.151;
   let total = 0;
+  let i = 0;
   for (
     i = INSIDE_ROLL_RADIUS;
     i <= INSIDE_ROLL_RADIUS + rollThick;
