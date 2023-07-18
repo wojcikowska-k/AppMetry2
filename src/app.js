@@ -7,10 +7,10 @@ const totalOutputTabEl = document.getElementById('total-output-tab');
 // ### EVENTS
 
 calculateBtnEl.addEventListener('click', () => {
-  totalOutputMathEl.innerHTML = calculate(
-    Number(veneerThickEl.value),
-    Number(rollThickEl.value)
-  );
+  // totalOutputMathEl.innerHTML = calculate(
+  //   Number(veneerThickEl.value),
+  //   Number(rollThickEl.value)
+  // );
   totalOutputTabEl.innerHTML = calculate2(
     Number(veneerThickEl.value),
     Number(rollThickEl.value)
