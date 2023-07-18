@@ -23,7 +23,6 @@ calculateBtnEl.addEventListener('click', () => {
 // const calculate = (veneerThick, rollThick) => {
 //   const INSIDE_ROLL_RADIUS = 10.151;
 //   let total = 0;
-//   let i = 0;
 //   for (
 //     i = INSIDE_ROLL_RADIUS;
 //     i <= INSIDE_ROLL_RADIUS + rollThick;
@@ -35,6 +34,7 @@ calculateBtnEl.addEventListener('click', () => {
 // };
 
 const calculate2 = (veneerThick, rollThick) => {
+  let total = 0;
   if (veneerThick === 0.5) {
     total = 59.129 * Math.pow(rollThick, 2) + 1307.8 * rollThick + 500.31;
     return `${Math.round(total / 100)} mb`;
