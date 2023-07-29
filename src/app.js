@@ -3,8 +3,6 @@ const rollThickEl = document.getElementById('roll-thick');
 const veneerThickEl = document.getElementById('veneer-thick');
 const totalOutputTabEl = document.getElementById('total-output-tab');
 
-const modalEl = document.getElementById('defaultModal');
-
 // ### EVENTS
 
 calculateBtnEl.addEventListener('click', () => {
@@ -41,13 +39,3 @@ const calculate2 = (veneerThick, rollThick) => {
     total = 0;
   }
 };
-
-window.addEventListener('scroll', function (e) {
-  modalEl.style['transform'] =
-    'scale(' + window.innerWidth / document.documentElement.clientWidth + ')';
-  overlay.style.left = window.pageXOffset + 'px';
-  overlay.style.bottom =
-    document.documentElement.clientHeight -
-    (window.pageYOffset + window.innerHeight) +
-    'px';
-});
