@@ -1,7 +1,6 @@
 const calculateBtnEl = document.getElementById('calculate-btn');
 const rollThickEl = document.getElementById('roll-thick');
 const veneerThickEl = document.getElementById('veneer-thick');
-const totalOutputMathEl = document.getElementById('total-output-math');
 const totalOutputTabEl = document.getElementById('total-output-tab');
 
 // ### EVENTS
@@ -13,6 +12,8 @@ calculateBtnEl.addEventListener('click', () => {
   );
   rollThickEl.value = '';
 });
+
+// ### CALCULATE
 
 const calculate2 = (veneerThick, rollThick) => {
   let total = 0;
@@ -38,3 +39,33 @@ const calculate2 = (veneerThick, rollThick) => {
     total = 0;
   }
 };
+
+// // ### SHOW TABLE
+// tableBtnEl.addEventListener('click', () => {
+//   thicknessTableEl.classList.remove('hidden');
+// });
+// //CLOSE TABLE
+// closeModalBtnEl.addEventListener('click', () => {
+//   thicknessTableEl.classList.add('hidden');
+// });
+
+//MODAL
+// (() => {
+//   const refs = {
+//     openModalBtn: document.querySelector('[data-modal-open]'),
+//     closeModalBtn: document.querySelector('[data-modal-close]'),
+//     modal: document.querySelector('[data-modal]'),
+//     modalBox: document.querySelector('.modal'),
+//   };
+
+//   refs.openModalBtn.addEventListener('click', toggleModal);
+//   refs.closeModalBtn.addEventListener('click', toggleModal);
+//   refs.modal.addEventListener('click', toggleModal);
+//   refs.modalBox.addEventListener('click', e => {
+//     e.stopPropagation();
+//   });
+
+//   function toggleModal() {
+//     refs.modal.classList.toggle('is-hidden');
+//   }
+// })();
